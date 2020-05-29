@@ -270,3 +270,42 @@ hr{
 }
 
 /* team */
+.team{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+.title{
+    margin-bottom: 60px;
+}
+.team_members{
+    display: flex;
+    justify-content: space-between;
+}
+.member{
+    display: block;
+}
+.member_info{
+    width: 263px;
+}
+.member_about{
+    margin-top: -3px;
+    height: 74px;
+    background-color: #e1e6ea;
+    display: flex;
+    align-items: center;
+}
+.member_about_text{
+    padding-left: 20px;
+    
+}
+.member_name{
+    margin-bottom: 8px;
+    color: #292f36;
+    font-size: 16px;
+    font-weight: 700;
+}
+.member_profession{
+    font-size: 14px;
+    font-weight: 400;
+    color: #8d8f92;
+}
