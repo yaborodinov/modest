@@ -94,18 +94,22 @@ body{
     font-weight: 700;
     text-transform: uppercase;
 }
-.header_search::after{
-    content: "";
-    display: block;
+.search_bnt{
+    
+    
     position: absolute;
     right: 22px;
     top: 50%;
     transform: translatey(-12px);
     width: 24px;
     height: 24px;
+    outline: none;
+    border: none;
     background-image: url(../img/icon\ 1.png);
+    background-color: #1d2126;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 
 }
 
