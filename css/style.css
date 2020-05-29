@@ -115,9 +115,7 @@ body{
 
 
 /* main */
-.main{
-    
-}
+
 
 
 /* slider */
@@ -282,21 +280,44 @@ hr{
     justify-content: space-between;
 }
 .member{
+    position: relative;
     display: block;
+    background-color: #e1e6ea;
 }
+.member:hover{
+    background-color: #3a454d;
+    transition: 0.2s linear;
+}
+.member:hover > .member_info>.member_photo{
+    opacity: 0.9;
+    transition: 0.2s linear;
+}
+.member:hover > .member_info>.member_about>.member_about_text>.member_name, 
+.member:hover > .member_info>.member_about>.member_about_text>.member_profession{
+    color: #fff;
+    transition: 0.2s linear;
+}
+.member:hover > .member_social{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.2s linear;
+}
+
 .member_info{
-    width: 263px;
+    width: 262px;
+}
+.member_photo{
+    
+    width: 262px;
 }
 .member_about{
     margin-top: -3px;
     height: 74px;
-    background-color: #e1e6ea;
     display: flex;
     align-items: center;
 }
 .member_about_text{
     padding-left: 20px;
-    
 }
 .member_name{
     margin-bottom: 8px;
@@ -308,4 +329,39 @@ hr{
     font-size: 14px;
     font-weight: 400;
     color: #8d8f92;
+}
+
+/* member_social */
+
+.member_social{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    transform: translateY(-74px);
+    left: 59px;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.member_social>a{
+    display: block;
+}
+.member_social_item{
+    width: 50px;
+    height: 50px;
+    background-color: #3a454d;
+    margin-right: 1px;
+}
+.member_social_item:hover{
+    background-color: #4e5a62;
+    transition: 0.2s linear;
+}
+.fb{
+    background-image: url(../img/icon\ 6.png);
+}
+.twitter{
+    background-image: url(../img/icon\ 5.png);
+}
+.in{
+    background-image: url(../img/icon\ 7.png);
 }
